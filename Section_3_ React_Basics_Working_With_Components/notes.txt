@@ -1,0 +1,26 @@
+npx create-react-app app-name giving dependency error on npm v8
+npm audit fix or npm audit fix -force did not solve issue
+running npx create-react-app app-name with --legacy-peer-deps also did now work
+downgraded to npm v6 using: npm install -g npm@6
+running npx create-react-app app-name with npmv6 also did not solve the issue
+
+Solution: remove special characters from the folder name
+
+JSX -> JavaScript XML
+JSX produces React "elements". Instead of artificially separating technologies (js and html) by putting markup and logic in separate files, React separates concerns* with loosely coupled units called “components” that contain both.
+
+ex.: const element = <h1>Hello, world!</h1>;
+
+*separation of concerns (SoC) is a design principle for separating a computer program into distinct sections. Each section addresses a separate concern**,
+
+**In CS Concern is a particular set of information that has an effect on the code of a computer program. A concern can be as general as "the details of the hardware for an application", or as specific as "the name of which class to instantiate".
+
+Declarative Approach: define the desired target state and let React figure out the actual JS DOM instructions.
+
+Declarative programming focus on the end result, imperative programming focuses on how to get there.
+
+
+
+
+
+
